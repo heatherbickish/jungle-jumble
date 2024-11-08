@@ -34,9 +34,17 @@ export class WordMumblesController {
 
   createMumble() {
     console.log('🍦')
-    // event.preventDefault()
+    event.preventDefault()
     const mumElm = event.target
-    console.log(mumElm.name.value);
+    const formData = {
+
+      name: mumElm.name.value,
+      body: mumElm.body.value
+    }
+    console.log(formData);
+    wordMumblesService.createMumble(formData)
+
+
 
 
   }

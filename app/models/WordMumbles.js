@@ -1,6 +1,9 @@
 import { generateId } from "../utils/GenerateId.js";
 
 export class WordMumbles {
+  push(arg0) {
+    throw new Error("Method not implemented.");
+  }
   constructor(data) {
     this.id = generateId()
     this.name = data.name

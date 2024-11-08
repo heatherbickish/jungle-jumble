@@ -53,11 +53,18 @@
 
       <div class="col-md-4 ">
 
-        <form>
-          <h4>Create Mumble</h4>
-          <div>
+        <form onsubmit="app.WordMumbleController.createMumble()">
+          <h4 class="text-center">Create Mumble</h4>
+          <div class="form-floating">
             <input type="text" class="form-control" id="mum-name" name="name" required>
-            <label for="">Mumble</label>
+            <label class="fw-bold" for="">Name</label>
+          </div>
+          <div class="form-floating">
+            <textarea rows="25" class="form-control" name="body" id="mum-body" required>
+
+            </textarea>
+            <label class="fw-bold" for="">Mumble</label>
+            <button class="btn btn-success w-100">Create</button>
           </div>
         </form>
       </div>

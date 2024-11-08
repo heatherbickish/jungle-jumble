@@ -1,6 +1,11 @@
 import { AppState } from "../AppState.js"
+import { WordMumbles } from "../models/WordMumbles.js";
 
 class WordMumblesService {
+  createMumble(formData) {
+    // throw new Error("Method not implemented.");
+    AppState.wordMumble.push(new WordMumbles(formData))
+  }
 
   selectActiveMumble(mumbleId) {
     console.log('🗃️', mumbleId)
